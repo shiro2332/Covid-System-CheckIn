@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="NavBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.navBarCtrl">
+   <left>
+      <AnchorPane prefHeight="720.0" prefWidth="300.0" style="-fx-background-color: #C33E37;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton layoutX="-2.0" layoutY="191.0" onAction="#onMyStatusButtonClick" prefHeight="100.0" prefWidth="306.0" text="My Status" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="2.0" layoutY="391.0" onAction="#onCheckInHistoryButtonClick" prefHeight="100.0" prefWidth="305.0" text="Check In History" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="491.0" onAction="#onLogoutButtonClick" prefHeight="100.0" prefWidth="305.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="4.0" layoutY="291.0" onAction="#onCheckInButtonClick" prefHeight="100.0" prefWidth="306.0" text="Check In" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

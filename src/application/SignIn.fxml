@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSnackbar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #272722;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.signInCtrl">
+   <children>
+      <AnchorPane layoutX="48.0" layoutY="48.0" prefHeight="305.0" prefWidth="507.0" style="-fx-background-color: #333333;">
+         <children>
+            <JFXTextField fx:id="nameTextField" focusColor="#c33e37" labelFloat="true" layoutX="106.0" layoutY="97.0" prefHeight="35.0" prefWidth="307.0" promptText="Name" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Segoe UI Italic" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" defaultButton="true" layoutX="347.0" layoutY="217.0" onAction="#onSignInButtonClicked" prefHeight="42.0" prefWidth="83.0" ripplerFill="#ee6464" style="-fx-background-color: #C33E37;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton defaultButton="true" layoutX="244.0" layoutY="217.0" onAction="#onRegisterButtonClicked" prefHeight="42.0" prefWidth="93.0" ripplerFill="#ee6464" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="106.0" layoutY="39.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="60.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@nameIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="60.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@passwordIcon.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="passwordTextField" focusColor="#c33e37" labelFloat="true" layoutX="106.0" layoutY="169.0" prefHeight="34.0" prefWidth="307.0" promptText="Password" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+            <JFXSnackbar fx:id="popup" layoutX="160.0" layoutY="290.0" stylesheets="@Snackbar.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

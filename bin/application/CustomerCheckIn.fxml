@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSnackbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="980.0" style="-fx-background-color: #272722;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.customerCheckInCtrl">
+   <children>
+      <Label layoutX="106.0" layoutY="79.0" text="Check In" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="checkInChoice" focusColor="#c33e37" labelFloat="true" layoutX="98.0" layoutY="224.0" prefHeight="39.0" prefWidth="291.0" promptText="Where are you now?" stylesheets="@ComboBox.css" />
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="741.0" layoutY="557.0" onAction="#onSaveCheckInClick" prefHeight="44.0" prefWidth="135.0" ripplerFill="#c33e37" style="-fx-background-color: #C33E37;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </JFXButton>
+       <JFXSnackbar fx:id="popup" layoutX="450.0" layoutY="680.0" stylesheets="@Snackbar.css" />
+   </children>
+</AnchorPane>
